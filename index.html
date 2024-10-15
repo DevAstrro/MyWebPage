@@ -38,7 +38,7 @@
         }
 
         nav a:hover {
-            color: #ff6347;
+            color: #3eed4f;
         }
 
         nav .logo a {
@@ -72,7 +72,7 @@
 
         .btn-primary {
             padding: 1rem 2rem;
-            background-color: #ff6347;
+            background-color: #00ff44;
             color: white;
             text-decoration: none;
             font-size: 1.2rem;
@@ -81,7 +81,7 @@
         }
 
         .btn-primary:hover {
-            background-color: #ff4500;
+            background-color: #00ff80;
             transform: scale(1.05);
         }
 
@@ -204,64 +204,66 @@
 
         /* Feedback Section */
         .custom-checkbox {
-    position: relative;
-    padding-left: 30px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 18px;
-    display: block;
-    line-height: 1.5;
-}
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 18px;
+            display: block;
+            line-height: 1.5;
+        }
 
-.custom-checkbox input[type="radio"] {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-}
+        .custom-checkbox input[type="radio"] {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
 
-.custom-checkbox label {
-    position: relative;
-    cursor: pointer;
-    display: inline-block;
-    padding-left: 40px; /* Increased the padding to create more space */
-}
+        .custom-checkbox label {
+            position: relative;
+            cursor: pointer;
+            display: inline-block;
+            padding-left: 40px; /* Increased the padding to create more space */
+        }
 
-.custom-checkbox label:before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
-    background-color: #eee;
-    border-radius: 50%;
-    border: 2px solid #ccc;
-    box-sizing: border-box;
-    transition: background-color 0.3s ease;
-}
+        .custom-checkbox label:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            background-color: #eee;
+            border-radius: 50%;
+            border: 2px solid #ccc;
+            box-sizing: border-box;
+            transition: background-color 0.3s ease;
+        }
 
-.custom-checkbox input:checked ~ label:before {
-    background-color: #4CAF50;
-    border-color: #4CAF50;
-}
+        .custom-checkbox input:checked~label:before {
+            background-color: #4CAF50;
+            border-color: #4CAF50;
+        }
 
-.custom-checkbox input:checked ~ label:after {
-    content: '';
-    position: absolute;
-    left: 6px;
-    top: 3px;
-    width: 7px;
-    height: 12px;
-    border: solid white;
-    border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
-}
+        .custom-checkbox input:checked~label:after {
+            content: '';
+            position: absolute;
+            left: 6px;
+            top: 3px;
+            width: 7px;
+            height: 12px;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+
         /* Animation */
         @keyframes fadeIn {
             from {
                 opacity: 0;
             }
+
             to {
                 opacity: 1;
             }
@@ -272,12 +274,12 @@
                 opacity: 0;
                 transform: translateY(20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-
     </style>
 </head>
 
@@ -296,7 +298,7 @@
     <!-- Hero Section -->
     <section class="hero">
         <div>
-            <h1>Hi, I'm Athrv.RG</h1>
+            <h1>Hi, I'm Athrv.RG!</h1>
             <p>Tech Enthusiast | Python Developer</p>
             <a href="#about" class="btn-primary">Learn More</a>
         </div>
@@ -307,8 +309,8 @@
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdmdcXlzrY7WLBxoVi5JblcAR2cq0Um5Hxyg&s" alt="Your Photo">
         <div>
             <h2>About Me</h2>
-            <p>Hello! I am Athrv RG, an 8th grader with expertise in Technologies.</p>
-            <p>Being passionate about the tech world, I spend most of my time learning new tools and programming languages.</p>
+            <p>Hello! I am Athrv RG, an Middle schooler with expertise in Technologies.</p>
+            <p>Being passionate about the tech world, I spend most of my time learning new tools and developing experemental Tech Products.</p>
         </div>
     </section>
 
@@ -332,31 +334,46 @@
     </section>
 
     <!-- Feedback Section -->
-     <section id="feedback">
-        <h2>Did You Like My Website?</h2>
-        <form id="feedbackForm" action="https://example.com/feedback-handler" method="POST">
-            <div class="custom-checkbox">
-                <input type="radio" id="likeYes" name="liked" value="yes">
-                <label for="likeYes">Yes, I liked it!</label>
-            </div>
-            <div class="custom-checkbox">
-                <input type="radio" id="likeNo" name="liked" value="no">
-                <label for="likeNo">No, I didn't like it.</label>
-            </div>
-            <br>
-            <input type="submit" value="Submit Feedback" class="btn-primary">
-            <p id="thankYouMessage" style="display:none; color: #4CAF50;">Thank you for your feedback!</p>
-        </form>
-    </section>
+    <section id="feedback">
+    <h2>Did You Like My Website?</h2>
+    <form id="feedbackForm" action="https://example.com/feedback-handler" method="POST">
+        <div class="custom-checkbox">
+            <input type="radio" id="likeYes" name="liked" value="yes">
+            <label for="likeYes">😊 Yes, I liked it!</label>
+        </div>
+        <div class="custom-checkbox">
+            <input type="radio" id="likeNo" name="liked" value="no">
+            <label for="likeNo">😞 No, I didn't like it.</label>
+        </div>
+        <br>
+        <input type="submit" value="Submit Feedback" class="btn-primary">
+        <p id="thankYouMessage" style="display:none; color: #4CAF50;">Thank you for your feedback! 😊</p>
+    </form>
+</section>
 
-    <!-- JavaScript for handling feedback -->
-    <script>
-        document.getElementById('feedbackForm').addEventListener('submit', function (event) {
-            event.preventDefault();
-            // Display thank you message
-            document.getElementById('thankYouMessage').style.display = 'block';
-        });
-    </script>
+<!-- JavaScript for handling feedback and unchecking -->
+<script>
+    // Uncheck the radio buttons when clicking outside the form
+    document.addEventListener('click', function (event) {
+        const form = document.getElementById('feedbackForm');
+        const isClickInsideForm = form.contains(event.target);
+        const radioYes = document.getElementById('likeYes');
+        const radioNo = document.getElementById('likeNo');
+
+        if (!isClickInsideForm) {
+            // Uncheck both radio buttons if click is outside the form
+            radioYes.checked = false;
+            radioNo.checked = false;
+        }
+    });
+
+    // Handle form submission and display thank you message
+    document.getElementById('feedbackForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+        // Display thank you message
+        document.getElementById('thankYouMessage').style.display = 'block';
+    });
+</script>
 
     <!-- Footer -->
     <footer>
@@ -366,3 +383,4 @@
 </body>
 
 </html>
+
